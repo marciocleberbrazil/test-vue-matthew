@@ -1,0 +1,42 @@
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: Ubuntu,sans-serif;
+  
+  @supports (-webkit-touch-callout: none) {
+    /* CSS specific to iOS devices */ 
+    min-height: -webkit-fill-available;
+  }
+  
+  main {
+    display: flex;
+    flex: 1;
+    background-color: $gray;
+    
+    .main-content {
+      display: flex;
+      width: 100%;
+      padding: $space-sm;
+      margin-top: 53px; 
+    }
+  }
+  
+  @media (min-width: $xl) {
+    .header {
+      .content {
+        max-width: 1200px;
+        margin: 0 auto;
+        width: 100%;
+      }
+    }
+    
+    main {
+      .main-content {
+        max-width: 1200px;
+        margin: 53px auto 0;
+        width: 100%;
+      }
+    }
+  }
+}
