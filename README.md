@@ -1,4 +1,4 @@
-# swipejobs2
+# Project Test
 
 ## Project setup
 ```
